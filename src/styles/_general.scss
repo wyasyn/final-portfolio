@@ -1,0 +1,209 @@
+h1, h2, h3, h4 {
+    font-family: $--ff-heading;
+    line-height: 1.1;
+}
+h2 {
+    font-size: 3rem;
+    color: $--accent;
+    text-wrap: balance;
+}
+
+.subhead {
+    font-family: $--ff-subheading;
+    font-weight: $--fw-small;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-wrap: balance;
+}
+a {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (width<1080px) {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+.active {
+    color: $--accent;
+}
+.cls-1 {
+    fill: $--white;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    font-family: $--ff-body;
+    font-size: 2rem;
+    background: transparent;
+    color: $--accent;
+    border: 1px solid $--accent;
+    padding: .2em 1.5em;
+    margin: 1em auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all .3s ease-out ;
+    -moz-transition: all .3s ease-out ;
+    -ms-transition: all .3s ease-out ;
+    -o-transition: all .3s ease-out ;
+    transition: all .3s ease-out ;
+    &:hover {
+        background: $--accent;
+        color: $--white;
+    }
+}
+
+
+.logo {
+    svg {
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+        width: 50px;
+        &:hover {
+            .cls-1 {
+                fill: $--accent;
+            }
+        }
+    }
+}
+
+.heading {
+    strong {
+        font-family: Proximanova, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: 'Recoleta';
+        font-style: normal;
+        font-size: 6rem;
+        font-weight: 500;
+    }
+}
+
+
+.card {
+    cursor:pointer;
+    max-width: 500px;
+    img {
+        height: 300px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        -webkit-border-radius: 15px 15px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+        -ms-border-radius: 15px 15px 0 0;
+        -o-border-radius: 15px 15px 0 0;
+        border-radius: 15px 15px 0 0;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -ms-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;  
+        &:hover{
+               -webkit-transform: translateY(-20px);
+               -moz-transform: translateY(-20px);
+               -ms-transform: translateY(-20px);
+               -o-transform: translateY(-20px);
+               transform: translateY(-20px);
+        }
+        }
+
+    .hello {
+        h3 {
+            font-family: 'Recoleta';
+            font-style: normal;
+            font-size: 3rem;
+            font-weight: 500;
+            padding: .3em 0;
+        }
+        p {
+            font-family: Proximanova, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: .2em 0;
+        }
+    }
+    @media screen and (width<768px) {
+        max-width: 760px;
+    }
+}
+
+.slider {
+    margin-top: 10em;
+}
+
+
+.Skill-card {
+    display: grid;
+    gap: 5em;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 1em;
+    @media screen and (width<768px) {
+        grid-template-columns: 1fr;
+    }
+    img {
+        height: 300px;
+        max-width: 500px;
+        width: 100%;
+        object-fit: cover;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border-radius: 15px;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -ms-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+        &:hover {
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+            -o-transform: translateX(-20px);
+            transform: translateX(-20px);
+            }
+        }
+    .content {
+        max-width: 500px;
+        h2 {
+            font-family: 'Recoleta';
+            font-weight: 500;
+            font-style: normal;
+            font-size: 3rem;
+            margin: .5em 0;
+        }
+        strong {
+            font-size: 4rem;
+            color: $--accent;
+        }
+        p {
+            font-family: Proximanova, sans-serif;
+            font-size: 19px;
+            font-weight: 300;
+        }
+    }
+}

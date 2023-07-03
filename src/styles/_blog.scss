@@ -1,0 +1,44 @@
+.blog {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    text-align: center;
+    img {
+        max-height: 300px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        margin-top: 3em;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        
+}
+   h1 {
+    font-size: 7rem;
+    margin: 1em 0;
+   }
+   h2 {
+    color: $--black;
+   }
+   small {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $--ff-body;
+    font-weight: $--fw-small;
+    margin: 2em 0;
+   }
+   .information {
+    margin: 10em 0;
+    h3 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        font-family: $--ff-body;
+        margin: 3em 0;
+    }
+   }
+}

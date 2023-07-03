@@ -1,0 +1,13 @@
+export {default as Footer} from './Footer';
+export {default as Logo} from './Logo';
+export {default as Navbar} from './Navbar';
+export {default as SocialMedia} from './SocialMedia';
+export {default as Hero} from './Hero';
+export {default as HomeAbout} from './HomeAbout';
+export {default as Heading} from './Heading';
+export {default as HomeServices} from './HomeServices';
+export {default as Project} from './Project';
+export {default as Cta} from './Cta';
+export {default as HomeSkills} from './HomeSkills';
+export {default as SkillCard} from './SkillCard';
+export {default as Intro} from './Intro';

@@ -1,0 +1,106 @@
+.about {
+    margin-top: 15em;
+    margin-bottom: 10em;
+    .heading {
+        text-align: center;
+        margin: 5em 0;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5em;
+        margin-bottom: 10em;
+        margin-top: 10em;
+        @media screen and (width<=900px) {
+            grid-template-columns: 1fr;
+        }
+        .col-1 {
+            max-width: 500px;
+            h3 {
+                font-size: 3rem;
+                text-wrap: balance;
+                margin-bottom: .5em;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 1.6;
+                font-family: $--ff-body;
+            }
+              @media screen and (width<=900px) {
+            justify-self: center;
+        }
+        }
+        .col-2 {
+            background: $--black;
+               -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-radius: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                max-height: 400px;
+            }
+        }
+    }
+
+    .content-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin-bottom: 3em;
+        p {
+                font-size: 1.6rem;
+                line-height: 1.6;
+                font-family: $--ff-body;
+                max-width: 650px;
+                &:first-child {
+                    align-self: flex-end;
+                     @media screen and (width<=900px) {
+            align-self: center;
+        }
+                }
+        @media screen and (width<=900px) {
+            align-self: center;
+        }
+            }
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5em;
+        margin-bottom: 10em;
+        @media screen and (width<=900px) {
+            grid-template-columns: 1fr;
+        }
+         p {
+                font-size: 1.6rem;
+                line-height: 1.6;
+                font-family: $--ff-body;
+            }
+    }
+
+    .education {
+        margin-top: 10em;
+        h3 {
+            font-size: 3rem;
+            margin-bottom: .5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+    }
+      @media screen and (width<=900px) {
+            text-align: center;
+        }
+
+        .mission {
+            margin-top: 10em;
+            h3 {
+                font-size: 3rem;
+                margin-bottom: .5em;
+            }
+        }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 65.5%;
+}
+
+
+$--white: rgb(219, 219, 219);
+$--black: #121212;
+$--ff-body: 'Lato', sans-serif;
+$--ff-subheading: Proximanova, sans-serif;
+$--ff-heading: 'Recoleta';
+$--fw-small: 300;
+$--fw-bold: 500;
+$--accent: #f00946;
+
+

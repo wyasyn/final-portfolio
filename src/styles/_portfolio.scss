@@ -1,0 +1,34 @@
+.portfolio {
+    margin-top: 15em;
+    .tile {
+        font-size: 7rem;
+    }
+
+    .projects {
+        margin-top: 10em;
+        margin-bottom: 10em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15rem;
+        .card {
+            &:nth-child(even){
+                -webkit-transform: translateY(-200px);
+                -moz-transform: translateY(-200px);
+                -ms-transform: translateY(-200px);
+                -o-transform: translateY(-200px);
+                transform: translateY(-200px);
+                
+                @media screen and (width<=768px) {
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    transform: translateY(0);
+                }
+            }
+        }
+        @media screen and (width<=768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
