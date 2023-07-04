@@ -21,6 +21,25 @@ a {
     font-family: inherit;
     text-decoration: none;
 }
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #121212;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            color: $--white;
+            font-family: $--ff-heading;
+            font-size: 3rem;
+        }
+    }
+}
 .container {
     width: 80%;
     margin: 0 auto;

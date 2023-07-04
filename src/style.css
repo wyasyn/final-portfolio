@@ -53,6 +53,26 @@ a {
   text-decoration: none;
 }
 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #121212;
+}
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.loader-content h1 {
+  color: rgb(219, 219, 219);
+  font-family: "Recoleta";
+  font-size: 3rem;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
