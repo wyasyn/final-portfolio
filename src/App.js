@@ -21,12 +21,12 @@ function App() {
   
     <div className="loader">
       <div className="loader-content">
+      <h1>Yasin Walum</h1>
       <RingLoader
         color={"#f00946"}
         loading={loading}
-        size={150}
+        size={50}
         />
-        <h1>Yasin Walum</h1>
       </div>
     </div>
     :

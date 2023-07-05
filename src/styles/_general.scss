@@ -30,13 +30,19 @@ a {
     &-content {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 20rem;
         align-items: center;
         justify-content: center;
+        @media screen and (width<300px) {
+            gap: 5rem;
+        }
         h1 {
             color: $--white;
             font-family: $--ff-heading;
-            font-size: 3rem;
+            font-size: 5rem;
+            @media screen and (width<300px) {
+                font-size: 2rem;
+            }
         }
     }
 }

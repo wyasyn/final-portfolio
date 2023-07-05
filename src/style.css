@@ -63,14 +63,24 @@ a {
 .loader-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 20rem;
   align-items: center;
   justify-content: center;
+}
+@media screen and (width < 300px) {
+  .loader-content {
+    gap: 5rem;
+  }
 }
 .loader-content h1 {
   color: rgb(219, 219, 219);
   font-family: "Recoleta";
-  font-size: 3rem;
+  font-size: 5rem;
+}
+@media screen and (width < 300px) {
+  .loader-content h1 {
+    font-size: 2rem;
+  }
 }
 
 .container {
