@@ -20,9 +20,11 @@ function HomeSkills() {
         heading="What can I do for you?"
         />
 
+          <div className="slider-container">
           <Carousel className='slider' >
              {skills}
           </Carousel>
+          </div>
 
        <div className="buttons">
        <Cta

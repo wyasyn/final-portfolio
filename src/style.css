@@ -27,6 +27,10 @@ html {
   line-height: 1.6;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1, h2, h3, h4 {
   font-family: "Recoleta";
   line-height: 1.1;
@@ -192,7 +196,7 @@ a {
   gap: 5em;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  padding: 1em;
+  padding: 1em 3em 5em;
 }
 @media screen and (width < 768px) {
   .Skill-card {
@@ -322,7 +326,6 @@ a {
   margin-bottom: 5em;
   border-radius: 0 0 0 100px;
   padding-top: 3em;
-  padding-bottom: 2em;
 }
 .home .hero .hero-container {
   display: grid;
@@ -355,10 +358,31 @@ a {
   }
 }
 .home .hero .hero-container .col-2 {
+  position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.home .hero .hero-container .col-2::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: rgb(219, 219, 219);
+  font-family: "Recoleta";
+  font-size: clamp(1.2rem, 1.5vw, 2.5rem);
+  font-weight: 500;
+  z-index: 0;
+  content: "the web is what we do!";
+  width: 70%;
+  height: 30%;
+  background: rgb(212, 48, 48);
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8em 8em 0 0;
 }
 .home .hero .hero-container .col-2 img {
   width: 65.5%;
@@ -368,7 +392,7 @@ a {
 }
 @media screen and (width <= 768px) {
   .home .hero .hero-container .col-2 img {
-    width: 100%;
+    width: 75%;
   }
 }
 @media screen and (width <= 768px) {

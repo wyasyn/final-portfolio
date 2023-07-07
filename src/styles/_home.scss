@@ -10,7 +10,6 @@
         -o-border-radius: 0 0 0 100px;
         border-radius: 0 0 0 100px;
         padding-top: 3em;
-        padding-bottom: 2em;
         .hero-container {
         display: grid;
         gap: 3rem;
@@ -40,10 +39,39 @@
             }
         }
         .col-2 {
+            position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            &::after {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                color: $--white;
+                font-family: $--ff-heading;
+                font-size: clamp(1.2rem, 1.5vw, 2.5rem);
+                font-weight: 500;
+                z-index: 0;
+                content: 'the web is what we do!';
+                width: 70%;
+                height: 30%;
+                background: rgb(212, 48, 48);
+                position: absolute;
+                bottom: -2.5rem;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+                -webkit-border-radius: 8em 8em 0 0 ;
+                -moz-border-radius: 8em 8em 0 0 ;
+                -ms-border-radius: 8em 8em 0 0 ;
+                -o-border-radius: 8em 8em 0 0 ;
+                border-radius: 8em 8em 0 0 ;
+            }
           img {
             width: 65.5%;
             -webkit-border-radius: 0 0 10% 10%;
@@ -53,7 +81,7 @@
             border-radius: 0 0 10% 10%;
             object-fit: cover;
             @media screen and (width<=768px) {
-                width: 100%;
+                width: 75%;
             }
           }
         }

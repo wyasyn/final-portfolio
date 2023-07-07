@@ -185,7 +185,7 @@ a {
     gap: 5em;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding: 1em;
+    padding: 1em 3em 5em;
     @media screen and (width<768px) {
         grid-template-columns: 1fr;
     }
