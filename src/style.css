@@ -370,14 +370,14 @@ a {
   justify-content: center;
   text-transform: uppercase;
   color: rgb(219, 219, 219);
-  font-family: "Recoleta";
+  font-family: "Lato", sans-serif;
   font-size: clamp(1.2rem, 1.5vw, 2.5rem);
   font-weight: 500;
   z-index: 0;
   content: "the web is what we do!";
   width: 70%;
   height: 30%;
-  background: rgb(212, 48, 48);
+  background: rgb(141, 52, 52);
   position: absolute;
   bottom: -2.5rem;
   left: 50%;
