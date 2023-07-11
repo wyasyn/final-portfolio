@@ -776,6 +776,9 @@ a {
   background-color: #f5f5f5;
   font-family: Lato, sans-serif;
 }
+.contact .row .col-2 .form-input:hover {
+  border-color: #e5e5e5 #e5e5e5 rgba(18, 18, 18, 0.6509803922);
+}
 .contact .row .col-2 .w-input {
   display: block;
   padding: 8px 12px;
@@ -812,6 +815,9 @@ a {
   border-radius: 0px;
   background-color: #f5f5f5;
   font-family: Lato, sans-serif;
+}
+.contact .text-a .form-input:hover {
+  border-color: #e5e5e5 #e5e5e5 rgba(18, 18, 18, 0.6509803922);
 }
 .contact .text-a .message {
   height: 120px;

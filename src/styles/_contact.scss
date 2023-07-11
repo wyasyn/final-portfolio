@@ -98,6 +98,9 @@
                 border-radius: 0px;
                 background-color: #f5f5f5;
                 font-family: Lato, sans-serif;
+                &:hover {
+                    border-color:  #e5e5e5  #e5e5e5 #121212a6;
+                }
             }
             .w-input {
                 display: block;
@@ -136,6 +139,9 @@
             border-radius: 0px;
             background-color: #f5f5f5;
             font-family: Lato, sans-serif;
+            &:hover {
+                border-color:  #e5e5e5  #e5e5e5 #121212a6;
+            }
         }
         .message {
             height: 120px;
